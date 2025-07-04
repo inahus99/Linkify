@@ -13,7 +13,7 @@ The application follows a standard client-server model. The diagrams below illus
 
 2. File Download Flow
 
-![File Upload Flow Diagram](./assets/upload.png)
+![File Upload Flow Diagram](./assets/download.png)
 
 
 

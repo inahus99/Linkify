@@ -51,8 +51,6 @@ function DownloadPage() {
     </div>
   );
 }
-
-// We can reuse our Card component here as well for consistency
 function Card({ children }) {
     return (
         <div className="bg-white text-black rounded-xl border border-gray-200 p-8 shadow-lg w-full max-w-md">

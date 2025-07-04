@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.post('/upload', uploadFile);
 router.get('/:uuid', getFile);
-// Add this new route for handling downloads
+// new route for handling downloads
 router.get('/download/:uuid', downloadFile);
 
 export default router;
