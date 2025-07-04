@@ -21,7 +21,6 @@ app.get('/', (req, res) => {
   res.send('API is running...');
 });
 
-// Use file routes <-- ADD THIS
 app.use('/api/files', fileRoutes);
 
 const PORT = process.env.PORT || 8000;
