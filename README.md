@@ -15,21 +15,23 @@ The application follows a standard client-server model. The diagrams below illus
 
 ![File Upload Flow Diagram](./assets/download.png)
 
+***********************************************
 
+Features----
+*Simple User Interface: A clean, single-page interface for uploading files.
 
-Features
-Simple User Interface: A clean, single-page interface for uploading files.
+*Modern UI: Styled with Tailwind CSS for a professional and responsive design.
 
-Modern UI: Styled with Tailwind CSS for a professional and responsive design.
+*Unique Link Generation: Each uploaded file generates a universally unique identifier (UUID) for a private and secure link.
 
-Unique Link Generation: Each uploaded file generates a universally unique identifier (UUID) for a private and secure link.
+*Direct Download Page: Shared links lead to a clean download page showing the file name and size, with a clear download button.
 
-Direct Download Page: Shared links lead to a clean download page showing the file name and size, with a clear download button.
+*RESTful API: A well-structured backend API to handle file uploads and data retrieval.
+******************************************
+Tech Stack-----
 
-RESTful API: A well-structured backend API to handle file uploads and data retrieval.
+Backend (file-sharing-backend)->
 
-Tech Stack
-Backend (file-sharing-backend)
 Node.js: JavaScript runtime environment.
 
 Express.js: Web framework for Node.js.
@@ -41,8 +43,9 @@ Mongoose: Object Data Modeling (ODM) library for MongoDB.
 Multer: Middleware for handling multipart/form-data, used for file uploads.
 
 UUID: For generating unique identifiers for file links.
+***********************************************
+Frontend (file-sharing-frontend)->
 
-Frontend (file-sharing-frontend)
 React: JavaScript library for building user interfaces.
 
 Parcel: Web application bundler.
@@ -52,17 +55,17 @@ Tailwind CSS: A utility-first CSS framework for styling.
 React Router DOM: For client-side routing.
 
 Axios: For making HTTP requests to the backend API.
-
+***********************************************
 Project Structure
 The project uses a monorepo-like structure with two main directories: file-sharing-frontend and file-sharing-backend.
 
 Getting Started
 Prerequisites
-Node.js (v18 or later recommended)
-
+Node.js (v18 or later recommended)--
 npm (v9 or later)
 
 MongoDB (either a local instance or a free MongoDB Atlas cluster)
+***********************************************
 
 Installation & Setup-------
 
