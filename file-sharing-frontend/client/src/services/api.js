@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 // Get the base URL from environment variables
-const API_BASE_URL = process.env.API_BASE_URL;
+const API_BASE_URL = process.env.API_URL;
 
 // Construct the full API URL
-const API_URL = `${API_BASE_URL}/api/files`;
+const API_URL = `${API_URL}/api/files`;
 
 export const uploadFile = async (formData) => {
   try {
