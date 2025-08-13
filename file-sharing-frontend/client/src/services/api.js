@@ -1,9 +1,14 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000/api/files'; // Your backend URL
+// Get the base URL from environment variables
+const API_BASE_URL = process.env.API_BASE_URL;
+
+// Construct the full API URL
+const API_URL = `${API_BASE_URL}/api/files`;
 
 export const uploadFile = async (formData) => {
   try {
+    // The endpoint here is just '/upload' because API_URL already includes '/api/files'
     const response = await axios.post(`${API_URL}/upload`, formData);
     return response.data;
   } catch (error) {
