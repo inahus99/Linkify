@@ -1,9 +1,10 @@
 {
   "name": "client",
   "version": "1.0.0",
-  "scripts": {
-    "start": "parcel index.html"
-  },
+ "scripts": {
+  "start": "parcel index.html",
+  "build": "parcel build index.html"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
