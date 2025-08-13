@@ -1,24 +1,19 @@
-# Dependencies
-/node_modules
-/file-sharing-frontend/node_modules
-/file-sharing-backend/node_modules
+# Dependencies - Ignores ALL node_modules folders in the project
+node_modules
 
-# Build output
-/dist
-/file-sharing-frontend/dist
+# Build output - Ignores ALL dist folders
+dist
 
-# Parcel cache
+# Parcel cache - Ignores ALL .parcel-cache folders
 .parcel-cache
-/file-sharing-frontend/.parcel-cache
 
-# Environment variables
+# Environment variables - Ignores ALL .env files
 .env
-/file-sharing-backend/.env
 
 # Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# User-generated content
+# User-generated content - Kept this specific for safety
 /file-sharing-backend/uploads/
