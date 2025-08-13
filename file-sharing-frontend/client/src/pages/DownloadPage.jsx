@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getFileInfo } from '../services/api';
-
+const API_BASE_URL = process.env.API_BASE_URL;
 function DownloadPage() {
   const { uuid } = useParams();
   const [fileInfo, setFileInfo] = useState(null);
@@ -38,13 +38,13 @@ function DownloadPage() {
               </p>
             </div>
             {/* This is an <a> tag styled like a button for direct download */}
-            <a 
-              href={`http://localhost:8000/api/files/download/${fileInfo.uuid}`}
-              className="block w-full text-center p-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700"
-              download
-            >
-              Download File
-            </a>
+          <a 
+  href={`${API_BASE_URL}/api/files/download/${fileInfo.uuid}`}
+  className="block w-full text-center p-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700"
+  download
+>
+  Download File
+</a>
           </div>
         )}
       </Card>
